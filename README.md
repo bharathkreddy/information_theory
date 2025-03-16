@@ -6,13 +6,13 @@ This repository contains a Python implementation of Hamming Code for error detec
 
 ## Features
 
-. Encoding: Converts 4 data bits into a 7-bit encoded message with redundant parity bits.
+. **Encoding**: Converts 4 data bits into a 7-bit encoded message with redundant parity bits.
 
-. Error Detection: Identifies single-bit errors in the encoded message.
+. **Error Detection**: Identifies single-bit errors in the encoded message.
 
-. Error Correction: Corrects the error by flipping the erroneous bit.
+. **Error Correction**: Corrects the error by flipping the erroneous bit.
 
-. Decoding: Extracts the original data bits from the corrected message.
+. **Decoding**: Extracts the original data bits from the corrected message.
 
 ## How It Works
 
@@ -76,20 +76,22 @@ Corrected Message:  0b1011011
 
 ### Functions:
 
-1. calculate_redundant_bits(m): Calculates the number of redundant bits required for m data bits.
+1. **calculate_redundant_bits(m)**: Calculates the number of redundant bits required for m data bits.
 
-2. position_redundant_bits(data): Inserts redundant bits at positions that are powers of 2.
+2. **position_redundant_bits(data)**: Inserts redundant bits at positions that are powers of 2.
 
-3. calculate_parity_bits(encoded_data, r): Computes parity values for redundant bits.
+3. **calculate_parity_bits(encoded_data, r)**: Computes parity values for redundant bits.
 
-4. hamming_encode(data): Encodes input data using Hamming Code.
+4. **hamming_encode(data)**: Encodes input data using Hamming Code.
 
-5. detect_and_correct_error(encoded_data): Detects and corrects single-bit errors in encoded data.
+5. **detect_and_correct_error(encoded_data)**: Detects and corrects single-bit errors in encoded data.
 
-6. hamming_decode(encoded_data): Decodes the corrected message to retrieve original data.
+6. **hamming_decode(encoded_data)**: Decodes the corrected message to retrieve original data.
 
-###Usage
-Prerequisites
+### Usage
+
+#### Prerequisites
+
 . Python 3.x installed on your system.
 
 Running the Code
@@ -132,3 +134,4 @@ Feel free to contribute by submitting issues or pull requests! If you have sugge
 ## Author
 
 Bharath k. Reddy
+(bharathreddy.io)
